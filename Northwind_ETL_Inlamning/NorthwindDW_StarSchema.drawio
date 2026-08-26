@@ -1,0 +1,46 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Sida-1" id="8qGMUbH7JtaIuTqx02R-">
+    <mxGraphModel dx="2015" dy="938" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Ox6DS5fOGC8SEvn0yBN7-24" edge="1" parent="1" source="Ox6DS5fOGC8SEvn0yBN7-1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" target="Ox6DS5fOGC8SEvn0yBN7-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ox6DS5fOGC8SEvn0yBN7-25" connectable="0" parent="Ox6DS5fOGC8SEvn0yBN7-24" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" value="1 : *" vertex="1">
+          <mxGeometry relative="1" x="-0.1399" y="-6" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ox6DS5fOGC8SEvn0yBN7-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;DimCustomer&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;PK CustomerKey : INT&lt;/div&gt;&lt;div&gt;CustomerID : NCHAR(5)&lt;/div&gt;&lt;div&gt;CompanyName : NVARCHAR(40)&lt;/div&gt;&lt;div&gt;ContactName : NVARCHAR(30)&lt;/div&gt;&lt;div&gt;City : NVARCHAR(15)&lt;/div&gt;&lt;div&gt;Country : NVARCHAR(15)&lt;/div&gt;&lt;div&gt;CustomerSegment : NVARCHAR(50)&lt;/div&gt;&lt;div&gt;EffectiveFromUtc : DATETIME2&lt;/div&gt;" vertex="1">
+          <mxGeometry height="190" width="330" x="-160" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="Ox6DS5fOGC8SEvn0yBN7-10" edge="1" parent="1" source="Ox6DS5fOGC8SEvn0yBN7-2" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" target="Ox6DS5fOGC8SEvn0yBN7-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ox6DS5fOGC8SEvn0yBN7-11" connectable="0" parent="Ox6DS5fOGC8SEvn0yBN7-10" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" value="1 : *" vertex="1">
+          <mxGeometry relative="1" x="0.0225" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ox6DS5fOGC8SEvn0yBN7-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;DimDate&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;PK DateKey : INT&lt;/div&gt;&lt;div&gt;FullDate : DATE&lt;/div&gt;&lt;div&gt;Year : SMALLINT&lt;/div&gt;&lt;div&gt;Quarter : TINYINT&lt;/div&gt;&lt;div&gt;Month : TINYINT&lt;/div&gt;&lt;div&gt;MonthName : NVARCHAR(20)&lt;/div&gt;&lt;div&gt;Week : TINYINT&lt;/div&gt;&lt;div&gt;DayOfMonth : TINYINT&lt;/div&gt;&lt;div&gt;DayName : NVARCHAR(20)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="190" width="480" x="290" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Ox6DS5fOGC8SEvn0yBN7-7" edge="1" parent="1" source="Ox6DS5fOGC8SEvn0yBN7-3" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" target="Ox6DS5fOGC8SEvn0yBN7-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ox6DS5fOGC8SEvn0yBN7-13" connectable="0" parent="Ox6DS5fOGC8SEvn0yBN7-7" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" value="1 : *" vertex="1">
+          <mxGeometry relative="1" x="0.0269" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ox6DS5fOGC8SEvn0yBN7-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;DimProduct&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;PK ProductKey : INT&lt;/div&gt;&lt;div&gt;ProductID : INT&lt;/div&gt;&lt;div&gt;ProductName : NVARCHAR(40)&lt;/div&gt;&lt;div&gt;CategoryName : NVARCHAR(15)&lt;/div&gt;&lt;div&gt;UnitPrice : DECIMAL(19,4)&lt;/div&gt;&lt;div&gt;Discontinued : BIT&lt;/div&gt;&lt;div&gt;EffectiveFromUtc : DATETIME2&lt;/div&gt;&lt;div&gt;CostPrice : DECIMAL(10,2)&lt;/div&gt;&lt;div&gt;CountryOfOrigin : NVARCHAR(100)&lt;/div&gt;&lt;div&gt;SupplierProductCode : NVARCHAR(100)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="210" width="340" x="930" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="Ox6DS5fOGC8SEvn0yBN7-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;FactSales&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;PK SalesKey : BIGINT&lt;/div&gt;&lt;div&gt;OrderID : INT&lt;/div&gt;&lt;div&gt;OrderLineNumber : INT&lt;/div&gt;&lt;div&gt;FK DateKey : INT&lt;/div&gt;&lt;div&gt;FK CustomerKey : INT&lt;/div&gt;&lt;div&gt;FK ProductKey : INT&lt;/div&gt;&lt;div&gt;Quantity : SMALLINT&lt;/div&gt;&lt;div&gt;UnitPrice : DECIMAL(19,4)&lt;/div&gt;&lt;div&gt;Discount : DECIMAL(5,4)&lt;/div&gt;&lt;div&gt;GrossAmount : DECIMAL(19,4)&lt;/div&gt;&lt;div&gt;NetAmount : DECIMAL(19,4)&lt;/div&gt;&lt;div&gt;LoadedAtUtc : DATETIME2&lt;/div&gt;" vertex="1">
+          <mxGeometry height="230" width="400" x="330" y="480" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
